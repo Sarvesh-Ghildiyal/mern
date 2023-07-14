@@ -59,3 +59,28 @@ btn.addEventListener('click',() =>
 // function hello(){
 //     console.log('hi')
 // }
+
+// ARRAY FUNCTIONS
+
+const friends= [
+    {
+        name:'x',
+        age:20,
+    },
+    {
+        name:'y',
+        age:21,
+    },
+    {
+        name:'z',
+        age:22,
+    }
+]
+
+const filtered_friends=friends.filter(element =>element.age>20)
+console.log(filtered_friends)
+console.log('hello')
+
+// as for array functions we have  MAP, FILTER, FIND foreach as well
+
+
