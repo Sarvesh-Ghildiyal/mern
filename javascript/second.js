@@ -109,12 +109,18 @@ console.log(aboutMe)
 // })
   
 fetch('../data.json')  /*this returns an promise object*/
-    .then(fetch_response=>fetch_response.json())   /*when all of the data is being fetched then, another requ is being made for
-                     json thing of the fetch response, thus another promise object is created*/
+    .then(fetch_response=>fetch_response.json())  
+    .then(json_data=>{
+        console.log(json_data)
+    })
+ 
+    /*when all of the data is being fetched then, another requ is being made for
+     
+                json thing of the fetch response, thus another promise object is created*/
 
 
     // on the second promise object when we got all data, it is then console logged
     // then is an method which takes one argument as the response data
-    .then(json_data=>{
-        console.log(json_data)
-    })
+    
+    // commenting is bit off the shore, readers may get
+                // confused me included
