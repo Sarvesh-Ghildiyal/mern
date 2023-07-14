@@ -83,4 +83,12 @@ console.log('hello')
 
 // as for array functions we have  MAP, FILTER, FIND foreach as well
 
+const Me = {
+    name: 'Sarvesh',
+    age: 20,
+};
 
+const aboutMe = `hello i am ${Me.name} 
+and i am ${Me.age} years old`
+
+console.log(aboutMe)
