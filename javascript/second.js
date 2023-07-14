@@ -92,3 +92,29 @@ const aboutMe = `hello i am ${Me.name}
 and i am ${Me.age} years old`
 
 console.log(aboutMe)
+
+
+// Lets start Promises in Javascript
+
+// FEtch api
+// const promise_Object=fetch('../data.json')
+
+// promise_Object.then(data =>{
+//     // console.log(data)
+//     const promise_Object2= data.json()
+
+//     promise_Object2.then(data=>{
+//         console.log(data)
+//     })
+// })
+  
+fetch('../data.json')  /*this returns an promise object*/
+    .then(fetch_response=>fetch_response.json())   /*when all of the data is being fetched then, another requ is being made for
+                     json thing of the fetch response, thus another promise object is created*/
+
+
+    // on the second promise object when we got all data, it is then console logged
+    // then is an method which takes one argument as the response data
+    .then(json_data=>{
+        console.log(json_data)
+    })
