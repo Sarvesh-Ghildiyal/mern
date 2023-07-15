@@ -1,0 +1,16 @@
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: Poppins;
+    margin: 0;
+    background-color: beige;
+}
+.wrapper{
+   border: 1px solid black;
+   width: 100vh;
+   height: 90vh;
+   margin: 2.5rem auto;
+   background-color:rgb(241, 245, 245);
+}
